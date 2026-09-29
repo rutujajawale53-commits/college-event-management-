@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">🎓 Campus Events</div><nav>
+<a href="index.html">Home</a><a href="events.html">Events</a><a href="schedule.html">Schedule</a><a href="clubs.html">Clubs</a>
+<a href="gallery.html">Gallery</a><a href="registration.html">Register</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+</nav></header>
+<main class="container">
+<h1>Event Registration</h1>
+<form action="#" method="post">
+<label>Full Name</label><input type="text" name="name" placeholder="Enter your name" required>
+<label>Email</label><input type="email" name="email" placeholder="Enter email" required>
+<label>Mobile Number</label><input type="tel" name="mobile" placeholder="10-digit mobile number" required>
+<label>Department</label>
+<select name="department"><option>Computer Engineering</option><option>Information Technology</option><option>Mechanical Engineering</option><option>Electronics Engineering</option><option>Civil Engineering</option></select>
+<label>Select Event</label>
+<select name="event"><option>Cultural Fest</option><option>Tech Innovation Day</option><option>Sports Meet</option><option>Green Campus Drive</option></select>
+<label>Year</label>
+<div class="radio"><input type="radio" name="year" value="SE"> SE <input type="radio" name="year" value="TE"> TE <input type="radio" name="year" value="BE"> BE</div>
+<label>Message</label><textarea name="message" rows="5" placeholder="Any message..."></textarea>
+<button type="submit">Submit Registration</button>
+<button type="reset" class="reset">Reset</button>
+</form>
+</main><footer>© 2026 Campus Events</footer>
+</body></html>

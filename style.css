@@ -1,0 +1,38 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f4f7fb;color:#222;line-height:1.6}
+header{background:#183b67;color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.logo{font-size:24px;font-weight:bold}
+nav{display:flex;gap:10px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;padding:8px 10px;border-radius:5px}
+nav a:hover{background:#2c5b8f}
+.hero{min-height:420px;background:linear-gradient(135deg,#183b67,#4b79a8);display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:50px 20px}
+.hero h1{font-size:48px;margin-bottom:15px}
+.hero p{font-size:20px;margin-bottom:25px}
+.btn,button{display:inline-block;background:#f39c12;color:white;border:0;padding:12px 22px;border-radius:6px;text-decoration:none;cursor:pointer;font-size:16px}
+.container{max-width:1100px;margin:40px auto;padding:0 20px}
+.container>h1{text-align:center;margin-bottom:15px;font-size:36px}
+.container>h2{text-align:center;margin:30px 0 20px}
+.cards,.club-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.club-list{grid-template-columns:repeat(2,1fr)}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 3px 12px #0002;border:1px solid #ddd}
+.card h2,.card h3{color:#183b67;margin:10px 0}
+.card a{color:#e67e22;font-weight:bold}
+.event-image{height:130px;border-radius:8px;background:#dfeaf5;display:flex;align-items:center;justify-content:center;font-size:55px}
+.notice{background:white;margin-top:35px;padding:25px;border-left:5px solid #f39c12;box-shadow:0 2px 8px #0001}
+.notice li{margin-left:25px}
+table{width:100%;border-collapse:collapse;background:white;margin-top:25px;box-shadow:0 2px 8px #0001}
+th,td{border:1px solid #ccc;padding:14px;text-align:center}
+th{background:#183b67;color:white}
+tr:nth-child(even){background:#f0f4f8}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:25px}
+.gallery div{height:180px;background:#dfeaf5;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:60px;box-shadow:0 3px 10px #0002}
+.gallery span{font-size:17px;margin-top:10px;color:#183b67;font-weight:bold}
+form{max-width:650px;margin:25px auto;background:white;padding:30px;border-radius:10px;box-shadow:0 3px 12px #0002}
+label{display:block;font-weight:bold;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #bbb;border-radius:5px;font-size:15px}
+.radio{padding:10px 0}.radio input{width:auto;margin-right:5px}
+button{margin-top:20px}.reset{background:#777;margin-left:8px}
+.contact-box{background:white;padding:25px;border-radius:10px;margin:25px auto;max-width:650px;box-shadow:0 2px 8px #0001}
+footer{text-align:center;background:#183b67;color:white;padding:20px;margin-top:50px}
+@media(max-width:800px){.cards{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}header{justify-content:center}.hero h1{font-size:36px}}
+@media(max-width:550px){.cards,.club-list,.gallery{grid-template-columns:1fr}.hero h1{font-size:30px}nav{justify-content:center}nav a{font-size:14px}.container>h1{font-size:28px}table{font-size:13px}th,td{padding:8px}}
